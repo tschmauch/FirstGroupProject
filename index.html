@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>New York Times Search</title>
+	<script src="https://use.fontawesome.com/ea6ff1062a.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1 class="display-3">
+					<i class="fas fa-newspaper"></i>New York Times Search</h1>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Search Parameters</h3>
+					</div>
+					<div class="panel-body">
+						<form action="/action_page.php">
+							<h4>Search Term:</h4>
+							<input id="searchTerm" name="search" type="text">
+							<br>
+							<h4>Number of Records to Retrieve:</h4>
+							<input list="numRecords">
+							<datalist id="numRecords">
+								<option value="1">
+									<option value="5">
+										<option value="10">
+							</datalist>
+							<br>
+							<h4>Start Year (Optional):</h4>
+							<input id="startYear" name="search" type="text">
+							<br>
+							<h4>End Year (Optional):</h4>
+							<input id="endYear" name="search" type="text">
+							<br>
+							<div class="buttonWrapper">
+								<button id="searchButton" type="button" class="btn">Search</button>
+								<button id="clearButton" type="button" class="btn">Clear Results</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Top Articles</h3>
+					</div>
+					<div id="articleArea" class="panel-body">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
